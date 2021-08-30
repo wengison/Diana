@@ -1,0 +1,11 @@
+@media screen and (max-width: 1450px) {
+    .container-1{
+        background: blue;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container-1{
+        background: red;
+    }
+}
