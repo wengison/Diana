@@ -1,11 +1,84 @@
 @media screen and (max-width: 1450px) {
     .container-1{
-        background: blue;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 400px;
+    }
+    .container-2{
+        height: 100vh;
     }
 }
 
 @media screen and (max-width: 1200px) {
+    .popis-main {
+        font-size: 2.5em;
+    }
+    
+}
+
+@media screen and (max-width: 1138.5px) {
+    .container-2 {
+        height: 180vh;
+    }
+    .card {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .popis-main {
+        font-size: 2em;
+    }
+    .navbar {
+        gap: 10%;
+    }
+}
+@media screen and (max-width: 960px) {
     .container-1{
-        background: red;
+        
+    background-size: cover;
+    }
+    .container-2 {
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        height: 265vh;
+    }
+    .card {
+        width: 410px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .menu-list {
+        display: none;
+    }
+    .logo-box {
+        margin-left: 20px;
+    }
+    .hamburger {
+        display: block;
+        margin-right: 20px;
+    }
+    .navbar {
+        justify-content: space-between;
+        gap: 0%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .popis-main {
+        width: 90%;
+        font-size: 1.75em;
+    }
+}
+@media screen and (max-width: 550px) {
+    .popis-main {
+        width: 90%;
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 450px) {
+    .popis-main {
+        width: 90%;
+        font-size: 1.25em;
     }
 }

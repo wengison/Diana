@@ -17,17 +17,22 @@
 <body>
     <section class="container-0"></section>
     <section class="container-1">
-        <div class="navbar">
+        <div class="navbar" id="navbar">
             <div class="logo-box">
                 <h2 style="font-family: 'Roboto', serif; color: rgb(37, 37, 37); font-weight: 700; letter-spacing: 3px;">DIANA </h2>
                 <div  class="logos"></div>
                 
             </div>
             <li>
+                <ul class="hamburger">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </ul>
                 <ul class="menu-list">
                     <li><a href="index.html" class="bold">Úvod</a></li>
                     <li><a onclick="" href="#sluzby" class="no-bold li-sluzby">Služby</a></li>
-                    <li><a href="#kratce" class="no-bold li-kratce">O nás</a></li>
+                    <li><a href="#onas" class="no-bold li-kratce">O nás</a></li>
                     <li><a href="#ukazka" class="no-bold li-ukazka">Galerie</a></li>
                     <li><a href="#kontakt" class="no-bold li-kontakt">Kontakt</a></li>
                     <li><a href="#" class="no-bold li-objednat">OBJEDNAT</a></li>
@@ -41,9 +46,9 @@
         </div>
     </section>
     <section class="main-sluzby" id="sluzby">
-        <div class="h1-sluzby">
-            <h1 style="font-family: 'Roboto', serif; margin-top: 5vh;">Naše Služby</h1>
-        </div>
+        <section class="kratce" id="kratce">
+            <h1>Naše služby</h1>
+        </section>
     </section>
     <section class="container-2">
         <div class="card card1">
@@ -73,7 +78,7 @@
         <a href="#" class="btn2-objednat"> Zobrazit zde</a>
     </section>
     <!--O nás--START----------------------------------------------------------------------------------->
-    <section class="kratce" id="kratce">
+    <section class="kratce" id="onas">
         <h1>Krátce o nás</h1>
     </section>
     <section class="vypln" style="background:rgb(255, 255, 255); width: 95.5%; height: 10vh;"></section>

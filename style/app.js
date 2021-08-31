@@ -1,7 +1,14 @@
-function timoso() {
-    document.querySelector('.container-1').style.background = 'linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url(dianos.jpg)';
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-80px";
+  }
+  prevScrollpos = currentScrollPos;
 }
-// setTimeout(timoso, 2000)
+
 
 
 
@@ -70,6 +77,6 @@ function Goright() {
 //   multiply();
 
 //-----------------------------------------------------------------------------------------------------------------------------------------------
-
-
+let sirka = document.querySelector('body').clientWidth
+console.log(sirka)
 
