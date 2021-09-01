@@ -8,7 +8,27 @@ var currentScrollPos = window.pageYOffset;
   }
   prevScrollpos = currentScrollPos;
 }
+// ----------------------------------------------------
 
+// Background changing image
+let numberImage = 1
+const conainer1 = document.querySelector('.container-1')
+
+function changeImage() {
+    numberImage++
+    if (numberImage>3) {
+        numberImage = 1
+    }
+    document.querySelector('.container-1').style.backgroundImage = `linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ),url(style/main-background${numberImage}.jpg)`
+    console.log(numberImage)
+}
+
+setInterval(changeImage, 6000)
+
+
+
+
+// ----------------------------------------------------------
 
 
 
@@ -38,11 +58,11 @@ const obrazek6 = document.querySelector(".obr-6");
 chevronLeft.addEventListener('click', Goleft);
 chevronRight.addEventListener('click', Goright);
 
-var posun = document.querySelector('.obr').clientWidth +2;
-console.log(posun);
+
 var nasobek = 0;
 
 function Goleft() {
+    var posun = document.querySelector('.obr').clientWidth +2;
     nasobek--;
     if (nasobek < 0) {
         nasobek = 3;
@@ -56,6 +76,7 @@ function Goleft() {
 }
 
 function Goright() {
+    var posun = document.querySelector('.obr').clientWidth +2;
     nasobek++;
     if (nasobek >3) {
         nasobek = 0;

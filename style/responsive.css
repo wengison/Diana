@@ -7,11 +7,30 @@
     .container-2{
         height: 100vh;
     }
+    .milujemeUcesy {
+        height: 90vh;
+    }
 }
-
+@media screen and (max-width:1350px) {
+    .milujeme-left{
+        margin-top: 10%;
+        background-position-x: 15vh;
+        background-size: cover;
+    }
+}
 @media screen and (max-width: 1200px) {
     .popis-main {
         font-size: 2.5em;
+    }
+    .popis-main {
+        height: 160px;
+    }
+    .btn-objednat {
+        font-size: .75em;
+        margin-top: -10px;
+    }
+    .card:hover {
+        transform: scale(104%);
     }
     
 }
@@ -23,6 +42,12 @@
     .card {
         width: 400px;
     }
+    .milujeme-left{
+        margin-top: 20%;
+        background-position-x: 5vh;
+        background-size: cover;
+    }
+    
 }
 
 @media screen and (max-width: 1000px) {

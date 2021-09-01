@@ -44,11 +44,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55) ),url(main-background0.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55) ),url(main-background1.jpg);
     background-size:100%;
     background-position-y: -30vh;
     margin-top: 0vh;
-   
+    transition: 2.75s ease-out;
 }
 .background {
     width: 100%;
@@ -75,7 +75,7 @@ body {
     top: 0vh;
     z-index: 40;
     background-color: rgb(255, 255, 255);
-    transition: top 0.3s;
+    transition: top 0.6s;
 }
 
 .logo-box {
@@ -161,10 +161,9 @@ img {
     height: 200px;
     width: 70%;
     text-align: center;
-    background-color: rgba(0, 0, 0, .2);
-  
+    background-color: rgba(0, 0, 0, 0);
     font-size: 3em;
-    font-weight: 400;
+    font-weight: 500;
     color: rgb(255, 255, 255);
     margin-top: 10vh;
 }
@@ -217,8 +216,6 @@ img {
     display: flex;
     justify-content: center;
     margin-top: 0px;
-    
-    
 }
 
 
@@ -277,6 +274,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
 .square-img1 {
@@ -347,9 +345,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: rgb(36, 36, 36) 1px solid;
-    
-    margin-top: 0vh;
+    margin-top: 5vh;
     z-index: 22;
 }
 
@@ -372,12 +368,14 @@ img {
 }
 
 .milujeme-left {
-    height: 85%;
+    min-width: 500px;
+    height: 370px;
     background: url(dianos.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: 25vh;
     margin-top: 5%;
+    
 }
 
 .milujeme-right-text {
