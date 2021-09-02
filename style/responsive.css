@@ -47,6 +47,9 @@
         background-position-x: 5vh;
         background-size: cover;
     }
+    .popis-second {
+        transform: translateX(-5vh);
+    }
     
 }
 
@@ -87,6 +90,13 @@
     .navbar {
         justify-content: space-between;
         gap: 0%;
+    }
+    .popis-second {
+        transform: translateX(0vh);
+        font-size: 1.25em;
+    }
+    .formular {
+        gap: 10vh;
     }
 }
 @media screen and (max-width: 800px) {

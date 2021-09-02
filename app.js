@@ -1,3 +1,4 @@
+// 1) Navbar scroll --------------------------------------
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
@@ -10,7 +11,7 @@ var currentScrollPos = window.pageYOffset;
 }
 // ----------------------------------------------------
 
-// Background changing image
+// 2) Background changing image---------------------------
 let numberImage = 1
 const conainer1 = document.querySelector('.container-1')
 
@@ -20,45 +21,30 @@ function changeImage() {
         numberImage = 1
     }
     document.querySelector('.container-1').style.backgroundImage = `linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ),url(main-background${numberImage}.jpg)`
-    console.log(numberImage)
 }
+// -------------------------------------------------------
+// const sluzby = document.querySelector(".li-sluzby");
+// const kratce = document.querySelector(".li-kratce");
+// const ukazka = document.querySelector(".li-ukazka");
+// const kontakt = document.querySelector(".li-kontakt");
+// const objednat = document.querySelector(".li-objednat");
+//-------------------------------------------------------//
 
-
-
-
-
-
-// ----------------------------------------------------------
-
-
-
-const sluzby = document.querySelector(".li-sluzby");
-const kratce = document.querySelector(".li-kratce");
-const ukazka = document.querySelector(".li-ukazka");
-const kontakt = document.querySelector(".li-kontakt");
-const objednat = document.querySelector(".li-objednat");
-
-
-
-
-
-//---------------------------------------------------------------//
-
+// 3) Galerie -------------------------------------------------------------------
+// Selectors
 const chevronLeft = document.querySelector(".chevron-left");
 const chevronRight = document.querySelector(".chevron-right");
 const galerie = document.querySelector(".galerie");
-
 const obrazek1 = document.querySelector(".obr-1");
 const obrazek2 = document.querySelector(".obr-2");
 const obrazek3 = document.querySelector(".obr-3");
 const obrazek4 = document.querySelector(".obr-4");
 const obrazek5 = document.querySelector(".obr-5");
 const obrazek6 = document.querySelector(".obr-6");
-
+// Listeners
 chevronLeft.addEventListener('click', Goleft);
 chevronRight.addEventListener('click', Goright);
-
-
+// Function
 var nasobek = 0;
 
 function Goleft() {
@@ -90,14 +76,9 @@ function Goright() {
 }
 
 // //---------------------------------------------------------------//
-
-// function multiply(a, b) {
-//     i = (a * b);
-//     console.log(i);
-//   }
-//   multiply();
-
-//-----------------------------------------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------
+// Testers
 let sirka = document.querySelector('body').clientWidth
-console.log(sirka)
-
+console.log('sirka:'+sirka)
+let vyska = document.querySelector('body').clientHeight
+console.log('vyska:'+vyska)

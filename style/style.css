@@ -48,6 +48,7 @@ body {
     background-size:100%;
     background-position-y: -30vh;
     margin-top: 0vh;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
     transition: 2.75s ease-out;
 }
 .background {
@@ -75,7 +76,8 @@ body {
     top: 0vh;
     z-index: 40;
     background-color: rgb(255, 255, 255);
-    transition: top 0.6s;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    transition: top 0.5s;
 }
 
 .logo-box {
@@ -207,9 +209,8 @@ img {
     border: solid 2px white;
     margin-top: -10vh;
     z-index: 10;
-    
     border-radius: 4px;
-    box-shadow: rgb(190, 190, 190) 0 40px 20px 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 40px 20px 5px;
 }
 .h1-sluzby {
     width: 100%;
@@ -233,7 +234,7 @@ img {
     color: white;
     gap: 10vh;
     border: solid #ececec 2px;
-    box-shadow: rgb(190, 190, 190) 0 40px 20px 5px;
+    box-shadow: rgba(161, 161, 161, 0.3) 0 0px 4px 4px;
     margin-top: -5vh;
     background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(hrebenos.jpg);
     background-size: cover;
@@ -309,7 +310,7 @@ img {
     gap: 20vh;
     margin-top: 0vh;
     z-index: 21;
-    box-shadow: rgb(190, 190, 190) 0 40px 20px 5px;
+    box-shadow: rgba(160, 160, 160, 0.3) 0 4px 4px 4px;
 }
 
 
@@ -341,7 +342,7 @@ img {
     width: 95.5%;
     height: 15vh;
     background: rgb(255, 255, 255);
-    color:rgb(94, 94, 94);
+    color:rgb(39, 39, 39);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -364,7 +365,7 @@ img {
     grid-template-columns: 1fr 1fr;
     column-gap: 5vh;
     box-shadow: rgb(190, 190, 190) 0 40px 20px 5px;
-    
+    box-shadow: rgba(160, 160, 160, 0.3) 0 4px 4px 4px;
 }
 
 .milujeme-left {
@@ -407,7 +408,7 @@ img {
     width: 95.5%;
     height: 15vh;
     background: rgb(255, 255, 255);
-    color:rgb(94, 94, 94);
+    color:rgb(39, 39, 39);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -430,7 +431,6 @@ img {
     padding-inline: 0em;
     position: relative;
     margin-right: 10px;
-   
 }
 
 .chevron-left {
